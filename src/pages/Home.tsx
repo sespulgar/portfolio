@@ -1,6 +1,11 @@
+import { NavBar } from "../components/NavBar"
+import { CardWithForm } from "./CardWithForm"
+
 export const Home = () => {
     return(
         <>
+        <NavBar />
+        <CardWithForm />
       <div id="sidebar">
         <h1>React Router Contacts</h1>
         <div>
