@@ -6,20 +6,20 @@ import { SideBar } from "./SideBar";
 interface MainLayoutProps{
   children: ReactNode;
 }
-
 export default function MainLayout({ children }: MainLayoutProps) {
+// export default function MainLayout() {
   return (
-    <div className="tw-h-screen">
+    <div className="h-screen">
       <NavBar/>
-      <div className="tw-hidden lg:tw-flex tw-mt-16 tw-w-60 tw-flex-col tw-fixed tw-inset-y-0 tw-p-3 tw-pr-0">
-        <Card className="tw-bg-accent tw-h-full">
-          <CardContent className="tw-h-full tw-px-3 tw-pt-3">
+      <div className="hidden lg:flex mt-16 w-60 flex-col fixed inset-y-0 p-3 pr-0">
+        <Card className="bg-accent h-full">
+          <CardContent className="h-full px-3 pt-3 border-2 border-sky-800">
             <SideBar/>
           </CardContent>
         </Card>
       </div>
-      <main className="lg:tw-pl-60 tw-pt-16">
-        <div className="tw-p-3 tw-h-full">
+      <main className="lg:pl-60 pt-16">
+        <div className="p-3 h-full">
           {children}
         </div>
       </main>
